@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Music Player</title>
+    <style>
+            body{
+                margin:100px auto;
+                text-align: center;
+            }
+            #tdl-list{
+                border:1px solid #009688;
+                border-radius:2px;
+                width:fit-content;
+                color:#009688;
+                text-align: left;
+            }
+            header{
+                background-color: lightskyblue;
+            }
+            li{
+                margin-bottom: 10px;
+                margin-top: 10px;
+                cursor: pointer;
+            }
+            div{
+                margin:20px auto;
+            }
+            h3{
+                margin: 10px;
+            }
+            input{
+                background-color:#009688;
+                width: 105px;
+                height:35px;
+                border-radius: 15px;
+                margin: 20px;
+                outline: none;
+                font: bold;
+            }
+            input:hover{
+                background-color: goldenrod;
+            }
+        </style>
+</head>
+<body>
+   
+    <div id="tdl-list">
+        <header>
+            <audio controls id="audio">
+                <source src="" type="audio/mpeg" id="source">
+            </audio>
+            <br>
+            <input type="button" value="Repeat All" id="repeatAll">
+            <input type="button" value="Shuffle" id="shuffle">
+        </header>
+		<h3>Play List</h3>
+		<ul id="user-list">
+            <li id="1">Track1</li>
+            <li id="2">Track2</li>
+            <li id="3">Track3</li>
+            <li id="4">Track4</li>
+		</ul>
+    </div>
+    <script src="media-player.js"></script>
+</body>
+</html>
